@@ -1,4 +1,4 @@
-trg_drawTriangle <- function(triangle) {
+trgDrawTriangle <- function(triangle) {
   incenter = trigr::trg_incenterCoords(A, B, C, a, b, c)
   circumcenter= trigr::trg_circumcenterCoords(A, B, C)
   centroid = trigr::trg_centroidCoords(A, B, C)

@@ -1,4 +1,4 @@
-trg_solveTriangle <- function(A = NULL, B = NULL, C = NULL,
+trgSolveTriangle <- function(A = NULL, B = NULL, C = NULL,
                               a = NULL, b = NULL, c = NULL,
                               alpha = NULL, beta = NULL, gamma = NULL) {
   if (!is.null(A) & !is.null(B) & !is.null(C)) {
