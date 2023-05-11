@@ -1,0 +1,15 @@
+trg_drawTriangle <- function(triangle) {
+  incenter = trigr::trg_incenterCoords(A, B, C, a, b, c)
+  circumcenter= trigr::trg_circumcenterCoords(A, B, C)
+  centroid = trigr::trg_centroidCoords(A, B, C)
+  orthocenter = trigr::trg_orthocenterCoords(A, B, C)
+  ma = trigr::trg_midpointLineSegment(B, C)
+  mb = trigr::midpointOnLineSegment(A, C)
+  mc = midpointOnLineSegment(A, B)
+  ha = pointOnLineSegment(B, C, ha_ab/ha_ac)
+  hb = pointOnLineSegment(A, C, hb_ba/hb_bc)
+  hc = pointOnLineSegment(A, B, hc_ca/hc_cb)
+  la = pointOnLineSegment(B, C, la_ac/la_ab)
+  lb = pointOnLineSegment(A, C, lb_bc/lb_ba)
+  lc = pointOnLineSegment(A, B, lc_cb/lc_ca)
+}
