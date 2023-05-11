@@ -1,0 +1,166 @@
+---
+title: "Triangles"
+format: html
+editor: source
+---
+
+## Symbols
+
+\newcommand{\trg}{\triangle}
+
+|   |   |
+|---|---|
+| $\trg ABC$ | a **triangle** |
+| $A$, $B$, $C$  | the **vertices** of the triangle  |
+| $(A_x, A_y)$, $(B_x, B_y)$, $(C_x, C_y)$ | the coordinates of vertices of the triangle |
+| $AB = c$, $BC = a$, $AC = b$ | the **edges** of the triangle |
+| $\angle A = \alpha$, $\angle B = \beta$, $\angle C = \gamma$ | the **internal angles** of the triangle |
+| $P$ | the **perimeter** of the triangle |
+| $s$ | the **semiperimeter** of the triangle |
+| $A_\trg$ | the **area** of the triangle |
+| $h_a$, $h_b$, $h_c$ | the **altitudes** of the triangle |
+| $a$, $b$ and $c$ | the **bases** of $h_a$, $h_b$, and $h_c$ respectively |
+| $H_A$, $H_B$, $H_C$ | the **feet** of $h_a$, $h_b$ and $h_c$ respectively |
+| $(H_{Ax}, H_{Ay})$, $(H_{Bx}, H_{By})$, $(H_{Cx}, H_{Cy})$ | the coordinates of $H_A$, $H_B$, $H_C$ respectively |
+| $H$ | the **orthocenter** of the triangle |
+| $(H_x, H_y)$ | the cordinates of the orthocenter |
+| $m_a$, $m_b$, $m_c$ | the **medians** of a triangle |
+| $M_A$, $M_B$, $M_C$ | the midpoints of $a$, $b$ and $c$ respectively |
+| $(M_{Ax}, M_{Ay})$, $(M_{Bx}, M_{By})$, $(M_{Cx}, M_{Cy})$ | the coordinates of $M_A$, $M_B$ and $M_C$ respectively |
+| $G$ | the **centroid** of the triangle |
+| $l_a$, $l_b$, $l_c$ | the internal **angle bisectors** |
+| $L_a$, $L_b$, $L_c$ | the **feet** of angle bisectors |
+| $(L_{Ax}, L_{Ay})$, $(L_{Bx}, L_{By})$, $(L_{Cx}, L_{Cy})$ | the coordinates of $L_a$, $L_b$ and $L_c$ respectively |
+| $I$ | the **incenter** of the triangle |
+| $r$ | the **inradius**, radius of the incircle |
+| $L_I$ | the circumference of incircle |
+| $A_I$ | the area of incircle |
+| $I_a$, $I_b$, $I_c$ | the **touchpoints** of the incircle of the triangle |
+| $(I_{ax}, I_{ay})$, $(I_{bx}, I_{by})$, $(I_{cx}, I_{cy})$ | the coordinates of $I_a$, $I_b$, $I_c$ |
+| $J_A$, $J_B$, $J_C$ | the **excenters** of the triangle|
+| $(J_{Ax}, J_{Ay})$, $(J_{Bx}, J_{By})$, $(J_{Cx}, J_{Cy})$ | the coordinates of $J_A$, $J_B$, $J_C$ respectively |
+| $r_A$, $r_B$, $r_C$ | the radii of the excircles |
+| $T_A$, $T_B$, $T_C$ | the **touchpoints** of the excircles |
+| $(T_{Ax}, T_{Ay})$, $(T_{Ax}, T_{Ay})$, $(T_{Ax}, T_{Ay})$ | the coordinates of $T_A$, $T_B$, $T_C$ respectively |
+| $N$ | **Nagel point** |
+| $(N_x, N_y)$ | the coordinates of Nagel point|
+| $p_a$, $p_b$, $p_c$ | **perpendicular bisectors** |
+| $O$ | the **circumcenter** of the triangle |
+| $(O_x, O_y)$ | the coordinates of circumcenter|
+| $R$ | the radius of circumcircle |
+| $L_O$ | the circumference of circumcircle |
+| $A_O$ | the area of circumcircle |
+
+
+## Scalene Triangle
+
+$$
+a \neq b \neq c, \quad \alpha \neq \beta \neq \gamma
+$$
+
+### Sum of angles
+
+$$
+\alpha + \beta + \gamma = \pi
+$$
+
+### Area of triangle
+
+$$
+
+$$
+
+### Law of cosines
+
+$$
+a^2 = b^2 + c^2 - 2bc \cos \alpha
+$$
+
+$$
+b^2 = a^2 + c^2 - 2ac \cos \beta
+$$
+
+$$
+c^2 = a^2 + b^2 - 2ab \cos \gamma
+$$
+
+### Law of sines
+
+$$
+\frac{a}{\sin \alpha} = \frac{b}{\sin \beta} = \frac{c}{\sin \gamma} = 2R
+$$
+
+$$
+\frac{\sin \alpha}{a} = \frac{\sin \beta}{b} = \frac{\sin \gamma}{c}
+$$
+
+### Law of tangents
+
+$$
+\frac{a-b}{a+b} = \frac{\tan \dfrac{\alpha - \beta}{2}}{\tan \dfrac{\alpha + \beta}{2}}
+$$
+
+### Law of cotangents
+
+$$
+\cot \frac{\alpha}{2} = \frac{s-a}{2}
+$$
+
+$$
+\cot \frac{\beta}{2} = \frac{s-b}{2}
+$$
+
+$$
+\cot \frac{\gamma}{2} = \frac{s-c}{2}
+$$
+
+$$
+\frac{p-a}{\cot \dfrac{\alpha}{2}} = \frac{p-b}{\cot \dfrac{\beta}{2}} = \frac{p-c}{\cot \dfrac{\gamma}{2}} = r
+$$
+
+### Projection Formulae
+
+$$
+a = b \cos \gamma + c \cos \beta
+$$
+
+$$
+b = c \cos \alpha + a \cos \gamma
+$$
+
+$$
+c = a \cos \beta + b \cos \alpha
+$$
+
+### Mollweide's formula
+
+$$
+\frac{a+b}{c} = \frac{\cos \dfrac{\alpha - \beta}{2}}{\sin \dfrac{\gamma}{2}} = \frac{\cos \dfrac{\alpha - \beta}{2}}{\cos \dfrac{\alpha + \beta}{2}}
+$$
+
+$$
+\frac{a-b}{c} = \frac{\sin \dfrac{\alpha - \beta}{2}}{\cos \dfrac{\gamma}{2}} = \frac{\sin \dfrac{\alpha - \beta}{2}}{\sin \dfrac{\alpha + \beta}{2}}
+$$
+
+
+## Equilateral Triangle
+
+$$
+a = b = b
+$$
+
+$$
+\alpha = \beta = \gamma = \frac{\pi}{3}
+$$
+
+## Isosceles Triangle
+
+## Right Triangle
+
+## Oblique Triangles
+
+### Obtuse Triangle
+
+### Acute Triangle
+
+### Degenerate Triangle
